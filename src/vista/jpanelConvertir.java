@@ -7,7 +7,7 @@ public class jpanelConvertir extends JPanel{
 	private JLabel ia,ja,m1,i,m2,j;
 	public JTextField cia,cja,cm1,ci,cm2,cj;
 	public JLabel ria,rja,ri,rj;
-	public JButton bia,bja,bi,bj;
+	public JButton bia,bia2,bja,bi,bi2,bi3,bj;
 	public jpanelConvertir(){
 		//--- Panel properties --------------------
 		setPreferredSize(new Dimension(560,360));
@@ -16,7 +16,7 @@ public class jpanelConvertir extends JPanel{
 		
 		ia=new JLabel("ia");
 		ja=new JLabel("ja");
-		m1=new JLabel("m1");
+		m1=new JLabel("m");
 		i=new JLabel("i");
 		m2=new JLabel("m2");
 		j=new JLabel("j");
@@ -33,10 +33,13 @@ public class jpanelConvertir extends JPanel{
 		ri=new JLabel("i =");
 		rj=new JLabel("j =");
 		
-		bia=new JButton("Econtrar");
-		bja=new JButton("Econtrar");
-		bi=new JButton("Econtrar");
-		bj=new JButton("Econtrar");
+		bia=new JButton("ia con ja,m");
+		bia2=new JButton("ia con i");
+		bja=new JButton("ja con ia,m");
+		bi=new JButton("i con ia");
+		bi2=new JButton("i con j,m");
+		bi3=new JButton("i2 con i1,m,m2");
+		bj=new JButton("j con i,m");
 		
 		
 		ia.setBounds(20,20,40,30);
@@ -54,18 +57,21 @@ public class jpanelConvertir extends JPanel{
 		cj.setBounds(70,220,80,30);
 		
 		
-		bia.setBounds(170,20,100,30);
-		bja.setBounds(170,60,100,30);
-		bi.setBounds(170,100,100,30);
-		bj.setBounds(170,140,100,30);
+		bia.setBounds(170,20,150,30);
+		bia2.setBounds(170,60,150,30);
+		bja.setBounds(170,100,150,30);
+		bi.setBounds(170,140,150,30);
+		bi2.setBounds(170,180,150,30);
+		bi3.setBounds(170,220,150,30);
+		bj.setBounds(170,260,150,30);
 		
-		ria.setBounds(290,20,250,30);
-		rja.setBounds(290,60,250,30);
-		ri.setBounds(290,100,250,30);
-		rj.setBounds(290,140,250,30);
+		ria.setBounds(330,20,250,30);
+		rja.setBounds(330,60,250,30);
+		ri.setBounds(330,100,250,30);
+		rj.setBounds(330,140,250,30);
 		
 		add(ia);add(ja);add(m1);add(m2);add(i);add(j);add(cia);add(cja);add(cm1);add(cm2);add(ci);add(cj);
-		add(bia);add(bja);add(bi);add(bj);add(ria);add(rja);add(ri);add(rj);
+		add(bia);add(bia2);add(bja);add(bi);add(bi2);add(bi3);add(bj);add(ria);add(rja);add(ri);add(rj);
 		
 		
 	}

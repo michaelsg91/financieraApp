@@ -4,7 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class jpanelMenu extends JPanel{
-	public JButton convertir;
+	public JButton convertir,ariVp,ariVf,geoVp,geoVf;
 	public jpanelMenu(){
 		//--- Panel properties --------------------
 		setPreferredSize(new Dimension(195,360));
@@ -12,18 +12,22 @@ public class jpanelMenu extends JPanel{
 		setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Menú Principal"));
 		
 		//--- Variables Initialization --------------
-		convertir=new JButton("Recibo");
+		convertir=new JButton("Conversión");
+		ariVp=new JButton("Aritmético VP");
+		ariVf=new JButton("Aritmético VF");
+		geoVp=new JButton("Geométrico VP");
+		geoVf=new JButton("Geométrico VF");
 		
 		//--- Location elements -------------
 		convertir.setBounds(20,30,155,30);
-		//factura.setBounds(20,70,155,30);
-		//ingresos.setBounds(20,110,155,30);
-		//cambUsu.setBounds(20,150,155,30);
-		//configurar.setBounds(20,190,155,30);
+		ariVp.setBounds(20,70,155,30);
+		ariVf.setBounds(20,110,155,30);
+		geoVp.setBounds(20,150,155,30);
+		geoVf.setBounds(20,190,155,30);
 		//confTarCamp.setBounds(20,230,155,30);
 		//confUsu.setBounds(20,270,155,30);
 		
-		add(convertir);
+		add(convertir);add(ariVp);add(ariVf);add(geoVp);add(geoVf);
 	}
 	
 }
