@@ -50,8 +50,33 @@ public class botonesAriVp implements ActionListener{
 				}				
 			}
 			
-			mp.jpAriVp.res.setText("i=" + decimal.format(icom));
+			mp.jpAriVp.res.setText("i=" + decimal.format(icom));		
+						
+		}
+		
+		if(e.getSource().equals(mp.jpAriVp.bn)){
 			
+			vp=Double.parseDouble(mp.jpAriVp.cvp.getText());
+			a=Double.parseDouble(mp.jpAriVp.ca.getText());
+			g=Double.parseDouble(mp.jpAriVp.cg.getText());
+			i=Double.parseDouble(mp.jpAriVp.ci.getText());
+			lim1=Double.parseDouble(mp.jpAriVp.clim1.getText());
+			lim2=Double.parseDouble(mp.jpAriVp.clim2.getText());
+			
+			
+			
+			for(n=lim1;n<lim2;n++){
+				ecu=(1-Math.pow((1+i), -n))/i;
+				
+				inter=((a*ecu)+((g/i)*(ecu-n*Math.pow((1+i), -n))))-vp;
+				System.out.println(decimal.format(inter));
+				if(Math.abs(inter)<1){
+					icom=n;
+					break;
+				}				
+			}
+			
+			mp.jpAriVp.res.setText("n=" + decimal.format(icom));		
 						
 		}
 	}

@@ -33,13 +33,13 @@ public class jpanelConvertir extends JPanel{
 		ri=new JLabel("i =");
 		rj=new JLabel("j =");
 		
-		bia=new JButton("ia con ja,m");
+		bia=new JButton("ia con ja-m");
 		bia2=new JButton("ia con i");
-		bja=new JButton("ja con ia,m");
+		bja=new JButton("ja con ia-m");
 		bi=new JButton("i con ia");
-		bi2=new JButton("i con j,m");
-		bi3=new JButton("i2 con i1,m,m2");
-		bj=new JButton("j con i,m");
+		bi2=new JButton("i con j-m");
+		bi3=new JButton("i2 con i-m-m2");
+		bj=new JButton("j con i-m");
 		
 		
 		ia.setBounds(20,20,40,30);

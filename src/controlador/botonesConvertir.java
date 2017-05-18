@@ -14,6 +14,8 @@ public class botonesConvertir implements ActionListener{
 				ia=Double.parseDouble(mp.jpConvertir.cia.getText());
 				i=ia/(1-ia);
 				mp.jpConvertir.ri.setText("i = "+i);
+			}else{
+				
 			}
 		}
 		if(e.getSource().equals(mp.jpConvertir.bi2)){
