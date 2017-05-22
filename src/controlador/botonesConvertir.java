@@ -55,22 +55,26 @@ public class botonesConvertir implements ActionListener{
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Efectiva") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Vencida")){
 					res=(Math.pow((1+tasa), (m1/m2)))-1;
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Efectiva") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=(Math.pow((1+tasa), (m1/m2)))-1;
 					res=res/(1+res);
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Vencida")){
 					res=(Math.pow((1+tasa), (m1/m2)))-1;
 					res=res*m2;
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=(Math.pow((1+tasa), (m1/m2)))-1;
 					res=res/(1+res);
 					res=res*m2;
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				
 			}
@@ -81,25 +85,29 @@ public class botonesConvertir implements ActionListener{
 					res=tasa/(1-tasa);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Efectiva") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=tasa/(1-tasa);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res/(1+res);
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Vencida")){
 					res=tasa/(1-tasa);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res*m2;
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=tasa/(1-tasa);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res/(1+res);
 					res=res*m2;
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				
 			}
@@ -110,25 +118,29 @@ public class botonesConvertir implements ActionListener{
 					res=tasa/m1;
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Efectiva") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=tasa/m1;
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res/(1+res);
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);			
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Vencida")){
 					res=tasa/m1;
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res*m2;
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);			
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=tasa/m1;
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res/(1+res);
 					res=res*m2;
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);			
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}				
 			}
 			
@@ -139,20 +151,23 @@ public class botonesConvertir implements ActionListener{
 					res=res/(1-res);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					mp.jpConvertir.cajaRes.setText(""+res);
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Efectiva") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=tasa/m1;
 					res=res/(1-res);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res/(1+res);
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);			
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Vencida")){
 					res=tasa/m1;
 					res=res/(1-res);
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res*m2;
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);			
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}
 				if(mp.jpConvertir.cen.getSelectedItem().toString().equals("Nominal") && mp.jpConvertir.cva.getSelectedItem().toString().equals("Anticipada")){
 					res=tasa/m1;
@@ -160,7 +175,8 @@ public class botonesConvertir implements ActionListener{
 					res=(Math.pow((1+res), (m1/m2)))-1;
 					res=res/(1+res);
 					res=res*m2;
-					mp.jpConvertir.cajaRes.setText(""+res);					
+					mp.jpConvertir.cajaRes.setText(""+res);			
+					mp.jpConvertir.cajaResPor.setText(""+res*100);
 				}				
 			}
 		}else{

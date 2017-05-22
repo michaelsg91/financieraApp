@@ -17,6 +17,9 @@ public class validacionCajas extends KeyAdapter{
 		if(mp.jpConvertir.cajaRes.isFocusOwner()){
 			e.consume();
 		}
+		if(mp.jpConvertir.cajaResPor.isFocusOwner()){
+			e.consume();
+		}
 		
 		if(mp.jpAriVf.ci.isFocusOwner()){
 			if((c<'0' || c>'9') && c!='.')e.consume();

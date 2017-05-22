@@ -4,8 +4,8 @@ import java.awt.Dimension;
 import javax.swing.*;
 
 public class jpanelConvertir extends JPanel{
-	private JLabel tasa,convertir,res;
-	public JTextField ctasa,cajaRes;
+	private JLabel tasa,convertir,res,por;
+	public JTextField ctasa,cajaRes,cajaResPor;
 	public JComboBox en,va,per,cen,cva,cper;
 	public JButton sol;
 	public jpanelConvertir(){
@@ -17,9 +17,11 @@ public class jpanelConvertir extends JPanel{
 		tasa=new JLabel("Tasa(%)");
 		convertir=new JLabel("Convertir");
 		res=new JLabel("Resultado");
+		por=new JLabel("%");
 		
 		ctasa=new JTextField();
 		cajaRes=new JTextField();
+		cajaResPor=new JTextField();
 		
 		sol=new JButton("Resolver");
 		
@@ -63,11 +65,14 @@ public class jpanelConvertir extends JPanel{
 		
 		res.setBounds(20,130,80,30);
 		cajaRes.setBounds(110,130,220,30);
+		cajaResPor.setBounds(350,130,220,30);
+		por.setBounds(570,130,30,30);
+		
 		
 		sol.setBounds(20,180,120,30);
 		
 		add(tasa);add(convertir);add(res);add(ctasa);add(cajaRes);add(en);add(va);add(per);add(cen);add(cva);add(cper);add(sol);
-		
+		add(cajaResPor);add(por);
 		
 		
 	}
