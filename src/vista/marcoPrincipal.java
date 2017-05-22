@@ -124,6 +124,7 @@ public class marcoPrincipal extends JFrame{
 		
 		
 		jpConvertir.cajaRes.addKeyListener(vCajas);
+		jpConvertir.cajaResPor.addKeyListener(vCajas);
 		jpConvertir.ctasa.addKeyListener(vCajas);
 		
 	}
