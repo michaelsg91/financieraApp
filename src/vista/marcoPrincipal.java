@@ -18,6 +18,7 @@ public class marcoPrincipal extends JFrame{
 	private botonesAriVf bAriVf;
 	private botonesGeoVp bGeoVp;
 	private botonesGeoVf bGeoVf;
+	private validacionCajas vCajas;
 	
 	public marcoPrincipal(){
 		jpMenu=new jpanelMenu();
@@ -33,6 +34,7 @@ public class marcoPrincipal extends JFrame{
 		bAriVp=new botonesAriVp(this);
 		bAriVf=new botonesAriVf(this);
 		bGeoVp=new botonesGeoVp(this);
+		vCajas=new validacionCajas(this);
 		
 		setTitle("Financiera App");
 		setResizable(false);
@@ -65,16 +67,12 @@ public class marcoPrincipal extends JFrame{
 		jpMenu.ariVp.addActionListener(bMenu);
 		jpMenu.ariVf.addActionListener(bMenu);
 		jpMenu.geoVp.addActionListener(bMenu);
+		jpMenu.geoVf.addActionListener(bMenu);
 		
 		
 		
-		jpConvertir.bi.addActionListener(bConvertir);
-		jpConvertir.bi2.addActionListener(bConvertir);
-		jpConvertir.bi3.addActionListener(bConvertir);
-		jpConvertir.bia.addActionListener(bConvertir);
-		jpConvertir.bia2.addActionListener(bConvertir);
-		jpConvertir.bja.addActionListener(bConvertir);
-		jpConvertir.bj.addActionListener(bConvertir);
+		jpConvertir.sol.addActionListener(bConvertir);
+		
 		
 		jpAriVp.bg.addActionListener(bAriVp);
 		jpAriVp.bi.addActionListener(bAriVp);
@@ -87,6 +85,46 @@ public class marcoPrincipal extends JFrame{
 		jpGeoVp.bg.addActionListener(bGeoVp);
 		jpGeoVp.bi.addActionListener(bGeoVp);
 		jpGeoVp.bn.addActionListener(bGeoVp);
+		
+		jpGeoVf.bg.addActionListener(bGeoVp);
+		jpGeoVf.bi.addActionListener(bGeoVp);
+		jpGeoVf.bn.addActionListener(bGeoVp);
+		
+		jpAriVf.ci.addKeyListener(vCajas);
+		jpAriVf.ca.addKeyListener(vCajas);
+		jpAriVf.cvf.addKeyListener(vCajas);
+		jpAriVf.cg.addKeyListener(vCajas);
+		jpAriVf.cn.addKeyListener(vCajas);
+		jpAriVf.clim1.addKeyListener(vCajas);
+		jpAriVf.clim2.addKeyListener(vCajas);
+		
+		jpAriVp.ci.addKeyListener(vCajas);
+		jpAriVp.ca.addKeyListener(vCajas);
+		jpAriVp.cvp.addKeyListener(vCajas);
+		jpAriVp.cg.addKeyListener(vCajas);
+		jpAriVp.cn.addKeyListener(vCajas);
+		jpAriVp.clim1.addKeyListener(vCajas);
+		jpAriVp.clim2.addKeyListener(vCajas);
+		
+		jpGeoVf.ci.addKeyListener(vCajas);
+		jpGeoVf.ca.addKeyListener(vCajas);
+		jpGeoVf.cvf.addKeyListener(vCajas);
+		jpGeoVf.cg.addKeyListener(vCajas);
+		jpGeoVf.cn.addKeyListener(vCajas);
+		jpGeoVf.clim1.addKeyListener(vCajas);
+		jpGeoVf.clim2.addKeyListener(vCajas);
+		
+		jpGeoVp.ci.addKeyListener(vCajas);
+		jpGeoVp.ca.addKeyListener(vCajas);
+		jpGeoVp.cvp.addKeyListener(vCajas);
+		jpGeoVp.cg.addKeyListener(vCajas);
+		jpGeoVp.cn.addKeyListener(vCajas);
+		jpGeoVp.clim1.addKeyListener(vCajas);
+		jpGeoVp.clim2.addKeyListener(vCajas);
+		
+		
+		jpConvertir.cajaRes.addKeyListener(vCajas);
+		jpConvertir.ctasa.addKeyListener(vCajas);
 		
 	}
 }

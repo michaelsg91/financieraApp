@@ -10,7 +10,7 @@ public class jpanelGeoVp extends JPanel{
 	
 	public jpanelGeoVp(){
 		//--- Panel properties --------------------
-		setPreferredSize(new Dimension(560,360));
+		setPreferredSize(new Dimension(600,360));
 		setLayout(null);
 		setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Interpolación"));
 		
